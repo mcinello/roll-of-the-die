@@ -1,2 +1,2 @@
-result = Random.rand(1..6)
-puts "the result of your roll is #{result}"
+dice_roll = (Random.rand(6) + 1)
+puts "the result of your roll is #{dice_roll}"
