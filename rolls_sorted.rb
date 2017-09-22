@@ -1,10 +1,8 @@
-roll_result = Random.rand(1..6)
+sorted_results = [] #sotres generated numbers
 
-def die_roll(dice)
-  10.times do |num|
-    num.sort!
-    puts "the result of your roll is #{num.sort!}"
-  end
-end
+10.times {
+  sorted_results.push Random.rand(6) + 1 }
 
-roll_die = die_roll(roll_result)
+sorted_results.sort!
+
+sorted_results.each { |result| puts "the result of your roll is #{result}" }
