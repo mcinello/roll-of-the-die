@@ -1,6 +1,6 @@
-rolls = (1..6).to_a
 
-two_rolls = rolls.permutation(2).to_a
-two_rolls.each { |roll|
-  puts "#{roll[0]} #{roll[1]}"
-}
+(1..6).each do |die1|
+  (1..6).each do |die2|
+    puts "#{die1} #{die2}"
+  end
+end
